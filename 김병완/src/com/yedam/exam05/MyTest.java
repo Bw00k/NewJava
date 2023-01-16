@@ -26,7 +26,8 @@ public class MyTest {
 		}else if (selectNo == 2) {
 				while(true) {
 				int random =(int)(Math.random()*size)+1;
-				dice(random == 5) break;
+				dice(random == 5) 
+				break;
 				
 			}
 		System.out.println("주사위 결과가 5가 나올 때 가지 : "+ count +"번 굴렸습니다.");
