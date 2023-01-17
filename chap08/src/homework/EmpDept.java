@@ -4,8 +4,8 @@ public class EmpDept extends Employee {
 
 	private String department;
 
-	public EmpDept(String name, int salary, String department) {
-		super(name, salary);
+	public EmpDept(String name, int income, String department) {
+		super(name, income);
 		this.department = department;
 	}
 
@@ -15,7 +15,7 @@ public class EmpDept extends Employee {
 
 	@Override
 	public void getInformation() {
-		System.out.println("이름 : " + getName() + " 연봉: " + getSalary() + " 부서: " + department);
+		System.out.println("이름 : " + getName() + " 연봉: " + getIncome() + " 부서: " + department);
 	}
 
 	@Override

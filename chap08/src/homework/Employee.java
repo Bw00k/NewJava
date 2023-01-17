@@ -3,13 +3,13 @@ package homework;
 public class Employee {
 	
 	private String name;
-	private int salary;
+	private int income;
 	
 	
-	public Employee(String name, int salary) {
+	public Employee(String name, int income) {
 		
 		this.name = name;
-		this.salary = salary;
+		this.income = income;
 	}
 	
 	
@@ -17,12 +17,12 @@ public class Employee {
 		return name;
 	}
 	
-	public int getSalary() {
-		return salary;
+	public int getIncome() {
+		return income;
 	}
 	
 	public void getInformation() {
-		System.out.println("이름 : " + name + "부서 : " + salary);
+		System.out.println("이름 : " + name + "부서 : " + income);
 	}
 	
 	public void print() {
