@@ -3,6 +3,6 @@ package homework;
 public interface Notebook {
 	public static final int NOTEBOOK_MODE = 1;
 	
-	public abstract void writeDocumentaion(); //: ¹®¼­¸¦ ÀÛ¼ºÇÏ´Â ±â´É
-	public abstract void searchInternet(); //: ÀÎÅÍ³İÀ» °Ë»öÇÏ´Â ±â´É
+	public abstract void writeDocumentation(); //: ë¬¸ì„œë¥¼ ì‘ì„±í•˜ëŠ” ê¸°ëŠ¥
+	public abstract void searchInternet(); //:ì¸í„°ë„·ì„ ê²€ìƒ‰í•˜ëŠ” ê¸°ëŠ¥
 }

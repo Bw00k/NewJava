@@ -3,8 +3,8 @@ package homework;
 public interface Tablet {
 	public static final int TABLET_MODE = 2;
 	
-	public abstract void watchVideo() {
-		System.out.println(": ¿µ»óÀ» Ãâ·ÂÇÏ´Â ±â´É");
-	}
-	public abstract void useApp() : ¾ÛÀ» »ç¿ëÇÏ´Â ±â´É
+	public abstract void watchVideo();  //ì˜ìƒì„ ì¶œë ¥í•˜ëŠ” ê¸°ëŠ¥
+		
+	
+	public abstract void useApp();		//ì•±ì„ ì‚¬ìš©í•˜ëŠ” ê¸°ëŠ¥
 }

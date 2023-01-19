@@ -5,11 +5,11 @@ public interface Keypad  {
 	 public static final int NORMAL_MODE = 0;
 	 public static final int HARD_MODE = 1;
 	 
+	 public abstract void leftUpButton(); //: ì™¼ìª½ì—ì„œ ìœ„ìª½ ë²„íŠ¼ì„ ëˆŒë €ì„ ë•Œ ë™ìž‘í•˜ëŠ” ê¸°ëŠ¥
+	 public abstract void leftDownButton(); //: ì™¼ìª½ì—ì„œ ì•„ëž˜ìª½ ë²„íŠ¼ì„ ëˆŒë €ì„ ë•Œ ë™ìž‘í•˜ëŠ” ê¸°ëŠ¥
+	 public abstract void rightUpButton(); //: ì˜¤ë¥¸ìª½ì—ì„œ ìœ„ìª½ ë²„íŠ¼ì„ ëˆŒë €ì„ ë•Œ ë™ìž‘í•˜ëŠ” ê¸°ëŠ¥
+	 public abstract void rightDownButton(); //: ì˜¤ë¥¸ìª½ì—ì„œ ì•„ëž˜ìª½ ë²„íŠ¼ì„ ëˆŒë €ì„ ë•Œ ë™ìž‘í•˜ëŠ” ê¸°ëŠ¥
+	 public abstract void changeMode(); //: ëª¨ë“œë¥¼ ë°”ê¾¸ê³  í˜„ìž¬ ëª¨ë“œë¥¼ ì¶œë ¥í•˜ëŠ” ê¸°ëŠ¥ ( NORMAL_MODE -> HARD_MODE / HARD_MODE -> NORMAL_MODE)
 	 
-	 
-	 	public abstract void leftUpButton(); //: ¿ÞÂÊ¿¡¼­ À§ÂÊ ¹öÆ°À» ´­·¶À» ¶§ µ¿ÀÛÇÏ´Â ±â´É}
-		public abstract void leftDownButton(); //: ¿ÞÂÊ¿¡¼­ ¾Æ·¡ÂÊ ¹öÆ°À» ´­·¶À» ¶§ µ¿ÀÛÇÏ´Â ±â´É
-		public abstract void rightUpButton(); //: ¿À¸¥ÂÊ¿¡¼­ À§ÂÊ ¹öÆ°À» ´­·¶À» ¶§ µ¿ÀÛÇÏ´Â ±â´É
-		public abstract void rightDownButton(); //: ¿À¸¥ÂÊ¿¡¼­ ¾Æ·¡ÂÊ ¹öÆ°À» ´­·¶À» ¶§ µ¿ÀÛÇÏ´Â ±â´É
-		public abstract void changeMode(); //: ¸ðµå¸¦ ¹Ù²Ù°í ÇöÀç ¸ðµå¸¦ Ãâ·ÂÇÏ´Â ±â´É ( NORMAL_MODE -> HARD_MODE / HARD_MODE -> NORMAL_MODE)
+	 	
 }

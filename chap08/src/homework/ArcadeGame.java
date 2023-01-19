@@ -5,7 +5,7 @@ public class ArcadeGame implements Keypad {
 	private int currentMode = NORMAL_MODE;
 	
 	public ArcadeGame() {
-		System.out.println("ArcadeGame ½ÇÇà");
+		System.out.println("ArcadeGame ì‹¤í–‰");
 	
 	
 	
@@ -14,32 +14,42 @@ public class ArcadeGame implements Keypad {
 	@Override
 	public void leftUpButton() {
 		// TODO Auto-generated method stub
-		System.out.println("Ä³¸¯ÅÍ°¡ ¾ÕÂÊÀ¸·Î ÀÌµ¿ÇÑ´Ù");
+		System.out.println("ìºë¦­í„°ê°€ ì•ìª½ìœ¼ë¡œ ì´ë™í•œë‹¤");
 	}
 
 	@Override
 	public void leftDownButton() {
-		// TODO Auto-generated method stub
-		System.out.println("Ä³¸¯ÅÍ°¡ µÚÂÊÀ¸·Î ÀÌµ¿ÇÑ´Ù");
+		
+		System.out.println( "ìºë¦­í„°ê°€ ë’¤ìª½ìœ¼ë¡œ ì´ë™í•œë‹¤");
 	}
 
 	@Override
 	public void rightUpButton() {
-		// TODO Auto-generated method stub
-		- NORMAL_MODE : "Ä³¸¯ÅÍ°¡ ÀÏ¹İ °ø°İ"¸¦ Ãâ·ÂÇÑ´Ù.
-		- HARD_MODE : "Ä³¸¯ÅÍ°¡ ¿¬¼Ó °ø°İ"¸¦ Ãâ·ÂÇÑ´Ù.
+		if ( currentMode == NORMAL_MODE) {
+			System.out.println("ìºë¦­í„°ê°€ ì¼ë°˜ ê³µê²©");
+		} else {
+			System.out.println("ìºë¦­í„°ê°€ ì—°ì† ê³µê²©");
+		}
 	}
 
 	@Override
 	public void rightDownButton() {
-		// TODO Auto-generated method stub
-		- NORMAL_MODE : "Ä³¸¯ÅÍ°¡ HIT °ø°İ."¸¦ Ãâ·ÂÇÑ´Ù.
-		- HARD_MODE : "Ä³¸¯ÅÍ°¡ Double HIT °ø°İ."¸¦ Ãâ·ÂÇÑ´Ù.
+		if ( currentMode == NORMAL_MODE) {
+			System.out.println("ìºë¦­í„°ê°€ HIT ê³µê²©.");
+		} else {
+			System.out.println("ìºë¦­í„°ê°€ Double HIT ê³µê²©.");
+		}
 	}
 
 	@Override
 	public void changeMode() {
-		// TODO Auto-generated method stub
+		if ( currentMode == 0) {
+			this.currentMode = HARD_MODE;
+			System.out.println("í˜„ì¬ ëª¨ë“œ : HARD_MODE");
+		} else {
+			this.currentMode= NORMAL_MODE;
+			System.out.println("í˜„ì¬ ëª¨ë“œ : NORMAL_MODE");
+		}
 		
 	}
 }

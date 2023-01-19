@@ -5,36 +5,47 @@ public  class RPGgame  implements Keypad{
 	private int currentMode = NORMAL_MODE;
 	
 	public RPGgame() {
-		System.out.println("RPGgame ½ÇÇà");
+		System.out.println("RPGgame ì‹¤í–‰");
 	}
 		
 	@Override
 	public void leftUpButton() {
-		System.out.println("Ä³¸¯ÅÍ°¡ À§ÂÊÀ¸·Î ÀÌµ¿ÇÑ´Ù");
+		System.out.println("ìºë¦­í„°ê°€ ìœ„ìª½ìœ¼ë¡œ ì´ë™í•œë‹¤");
 	}
 
 	@Override
 	public  void leftDownButton() {
-		System.out.println("Ä³¸¯ÅÍ°¡ ¾Æ·¡ÂÊÀ¸·Î ÀÌµ¿ÇÑ´Ù");
+		System.out.println("ìºë¦­í„°ê°€ ì•„ë˜ìª½ìœ¼ë¡œ ì´ë™í•œë‹¤");
 	}
 
 	@Override
 	public void rightUpButton() {
-		System.out.println();
-		- NORMAL_MODE : "Ä³¸¯ÅÍ°¡ ÇÑÄ­´ÜÀ§·Î Á¡ÇÁÇÑ´Ù."¸¦ Ãâ·ÂÇÑ´Ù.
-		- HARD_MODE : "Ä³¸¯ÅÍ°¡ µÎÄ­´ÜÀ§·Î Á¡ÇÁÇÑ´Ù."¸¦ Ãâ·ÂÇÑ´Ù.
+		if ( currentMode == NORMAL_MODE) {
+			System.out.println("ìºë¦­í„°ê°€ í•œì¹¸ë‹¨ìœ„ë¡œ ì í”„í•œë‹¤");
+		} else {
+			System.out.println("ìºë¦­í„°ê°€ ë‘ì¹¸ë‹¨ìœ„ë¡œ ì í”„í•œë‹¤");
+		}
 	}
 
 	@Override
 	public void rightDownButton() {
-		System.out.println();
-		- NORMAL_MODE : "Ä³¸¯ÅÍ°¡ ÀÏ¹İ °ø°İ."¸¦ Ãâ·ÂÇÑ´Ù.
-		- HARD_MODE : "Ä³¸¯ÅÍ°¡ HIT °ø°İ."¸¦ Ãâ·ÂÇÑ´Ù.
+		if ( currentMode == NORMAL_MODE) {
+			System.out.println("ìºë¦­í„°ê°€ ì¼ë°˜ ê³µê²©");
+		} else {
+			System.out.println("ìºë¦­í„°ê°€ HIT ê³µê²©");
+		}
+		
 	}
 
 	@Override
 	public void changeMode() {
-		System.out.println();
+		if ( currentMode == 0) {
+			this.currentMode = HARD_MODE;
+			System.out.println("í˜„ì¬ ëª¨ë“œ : HARD_MODE");
+		} else {
+			this.currentMode= NORMAL_MODE;
+			System.out.println("í˜„ì¬ ëª¨ë“œ : NORMAL_MODE");
+		}
 	}
 	
 

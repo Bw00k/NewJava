@@ -1,10 +1,6 @@
-package homework;
-
-public class Keypad_exe {
 	public static void main(String[] args) {
-		Keypad game = null;
+		Keypad game = new RPGgame();
 		
-		game = new RPGgame();
 		game.leftUpButton();
 		game.rightUpButton();
 		game.changeMode();
@@ -13,9 +9,9 @@ public class Keypad_exe {
 		game.leftDownButton();
 		game.changeMode();
 		game.rightDownButton();
-
+		
 		System.out.println("===================");
-
+		
 		game = new ArcadeGame();
 		game.leftUpButton();
 		game.rightUpButton();
@@ -25,4 +21,3 @@ public class Keypad_exe {
 		game.leftUpButton();
 		game.rightDownButton();
 	}
-}
