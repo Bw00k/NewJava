@@ -2,6 +2,8 @@ package com.yedam.common;
 
 import java.util.Scanner;
 
+import com.yedam.java.Product;
+
 public class ProductProgram1 {
 
 	public ProductProgram1() {
